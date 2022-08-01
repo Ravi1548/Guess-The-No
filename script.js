@@ -27,6 +27,7 @@ document.querySelector('.check').addEventListener('click', function(){
     }
     else if(guess === secretNumber){
         document.querySelector('.message').textContent  = 'Correct Number!';
+          document.body.style.backgroundColor = 'green';
     }
     else if(guess > secretNumber && guess - secretNumber > 3){
         document.querySelector('.message').textContent  = 'Tooo high!';
@@ -50,4 +51,5 @@ document.querySelector('.again').addEventListener('click' , function(){
     document.querySelector('.score').textContent  = 20;
      secretNumber = Math.trunc(Math.random() * 20) + 1;
        document.querySelector('.message').textContent  = 'Guess Again..'
+       document.body.style.backgroundColor = '#222';
 })
