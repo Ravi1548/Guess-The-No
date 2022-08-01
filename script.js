@@ -28,17 +28,19 @@ document.querySelector('.check').addEventListener('click', function(){
     else if(guess === secretNumber){
         document.querySelector('.message').textContent  = 'Correct Number!';
     }
-    else if(guess > secretNumber){
-        document.querySelector('.message').textContent  = 'Close but High!';
-    }
-    else if(guess < secretNumber ){
-        document.querySelector('.message').textContent  = 'Close but Low!!';
-    }  
     else if(guess > secretNumber && guess - secretNumber > 3){
         document.querySelector('.message').textContent  = 'Tooo high!';
     }
     else if(guess < secretNumber && secretNumber-guess > 3){
         document.querySelector('.message').textContent  = 'Tooo low!';
+    }
+     else if(guess > secretNumber){
+        document.querySelector('.message').textContent  = 'Close but High!';
+    }
+    else if(guess < secretNumber ){
+        document.querySelector('.message').textContent  = 'Close but Low!!';
+    }  
+    
     }
 });
    
