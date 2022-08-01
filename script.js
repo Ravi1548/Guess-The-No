@@ -48,5 +48,6 @@ document.querySelector('.check').addEventListener('click', function(){
 document.querySelector('.again').addEventListener('click' , function(){
     document.querySelector('.guess').value = '';
     document.querySelector('.score').textContent  = 20;
-    let secretNumber = Math.trunc(Math.random() * 20) + 1;
+     secretNumber = Math.trunc(Math.random() * 20) + 1;
+       document.querySelector('.message').textContent  = 'Guess Again..'
 })
