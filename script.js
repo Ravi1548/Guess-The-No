@@ -89,4 +89,7 @@ alert('You only have 5 chances to predict...Try your Luck!!😏😏😏 ')
          secretNumber = Math.trunc(Math.random() * 20) + 1;
          document.querySelector('.message').textContent  = 'Guess Again..🙄🙄'
          document.querySelector('body').style.backgroundImage = "url(back.jpg)";
-    }
+         
+
+
+    })
